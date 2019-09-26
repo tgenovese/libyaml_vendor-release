@@ -1,3 +1,26 @@
+## libyaml_vendor (eloquent) - 1.0.0-1
+
+The packages in the `libyaml_vendor` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release --track eloquent --rosdistro eloquent libyaml_vendor` on `Thu, 26 Sep 2019 19:07:40 -0000`
+
+The `libyaml_vendor` package was released.
+
+Version of package(s) in repository `libyaml_vendor`:
+
+- upstream repository: https://github.com/ros2/libyaml_vendor.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.16.1`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.42`
+
+
 ## libyaml_vendor (dashing) - 1.0.0-1
 
 The packages in the `libyaml_vendor` repository were released into the `dashing` distro by running `/home/steven/osrf/bloom/myscripts/py3env/bin/bloom-release -n -r dashing libyaml_vendor --override-release-repository-push-url git@github.com:ros2-gbp/libyaml_vendor-release` on `Thu, 11 Apr 2019 19:19:31 -0000`
