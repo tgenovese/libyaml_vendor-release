@@ -1,0 +1,12 @@
+Source: ros-eloquent-libyaml-vendor
+Section: misc
+Priority: extra
+Maintainer: Mikael Arguedas <mikael@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-eloquent-ament-cmake, ros-eloquent-ros-workspace
+Homepage: https://github.com/yaml/libyaml
+Standards-Version: 3.9.2
+
+Package: ros-eloquent-libyaml-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-eloquent-ros-workspace
+Description: Wrapper around libyaml, provides the last version (1.8.0 rc) that ships with a CMake module
