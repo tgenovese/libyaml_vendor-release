@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.9)
 
 project(libyaml_vendor)
 
@@ -6,7 +6,9 @@ find_package(ament_cmake REQUIRED)
 
 macro(build_libyaml)
   set(extra_cmake_args)
-  if(DEFINED CMAKE_BUILD_TYPE)
+
+  get_property(multi_config GLOBAL PROPERTY GENERATOR_IS_MULTI_CONFIG)
+  if(NOT multi_config AND DEFINED CMAKE_BUILD_TYPE)
     list(APPEND extra_cmake_args -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE})
   endif()
 
@@ -45,7 +47,7 @@ macro(build_libyaml)
     endif()
   endif()
   include(ExternalProject)
-  ExternalProject_Add(libyaml-10c9078
+  externalproject_add(libyaml-10c9078
     URL https://github.com/yaml/libyaml/archive/10c907871f1ccd779c7fccf6b81a62762b5c4e7b.zip
     URL_MD5 b595f0ab0735c04c7f6ed0a798a3eff7
     TIMEOUT 60
@@ -67,5 +69,11 @@ endmacro()
 build_libyaml()
 
 ament_export_libraries(yaml)
+ament_export_dependencies(yaml)
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
 ament_package()
