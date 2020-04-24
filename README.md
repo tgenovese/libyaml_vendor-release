@@ -1,3 +1,26 @@
+## libyaml_vendor (foxy) - 1.0.1-1
+
+The packages in the `libyaml_vendor` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --rosdistro foxy --track foxy libyaml_vendor --edit` on `Fri, 24 Apr 2020 20:12:06 -0000`
+
+The `libyaml_vendor` package was released.
+
+Version of package(s) in repository `libyaml_vendor`:
+
+- upstream repository: https://github.com/ros2/libyaml_vendor.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.3`
+- catkin_pkg version: `0.4.17`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.1`
+- vcstools version: `0.1.42`
+
+
 ## libyaml_vendor (eloquent) - 1.0.0-1
 
 The packages in the `libyaml_vendor` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release --track eloquent --rosdistro eloquent libyaml_vendor` on `Thu, 26 Sep 2019 19:07:40 -0000`
