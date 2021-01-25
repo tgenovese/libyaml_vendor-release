@@ -1,0 +1,12 @@
+Source: ros-foxy-libyaml-vendor
+Section: misc
+Priority: optional
+Maintainer: Mikael Arguedas <mikael@osrfoundation.org>
+Build-Depends: debhelper (>= 9.0.0), ros-foxy-ament-cmake, ros-foxy-ament-cmake-gtest, ros-foxy-ament-lint-auto, ros-foxy-ament-lint-common, ros-foxy-performance-test-fixture, ros-foxy-rcpputils, ros-foxy-ros-workspace
+Homepage: https://github.com/yaml/libyaml
+Standards-Version: 3.9.2
+
+Package: ros-foxy-libyaml-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-foxy-ros-workspace
+Description: Wrapper around libyaml, provides the last version (1.8.0 rc) that ships with a CMake module

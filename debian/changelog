@@ -1,0 +1,47 @@
+ros-foxy-libyaml-vendor (1.0.3-1focal) focal; urgency=high
+
+  * Foxy QD point to Foxy benchmark tests (#26 <https://github.com/ros2/libyaml_vendor/issues/26>)
+  * Update QD (#25 <https://github.com/ros2/libyaml_vendor/issues/25>)
+  * Included benchmark tests (#24 <https://github.com/ros2/libyaml_vendor/issues/24>)
+  * Add Security Vulnerability Policy pointing to REP-2006. (#18 <https://github.com/ros2/libyaml_vendor/issues/18>)
+  * Add quality declaration libyaml_vendor (#12 <https://github.com/ros2/libyaml_vendor/issues/12>)
+  * Contributors: Alejandro Hernández Cordero, Chris Lalancette, Jorge Perez, Louise Poubel
+
+ -- Mikael Arguedas <mikael@osrfoundation.org>  Mon, 25 Jan 2021 00:00:00 -0000
+
+ros-foxy-libyaml-vendor (1.0.2-1focal) focal; urgency=high
+
+  * Quality declaration for external dependency libyaml (#14 <https://github.com/ros2/libyaml_vendor/issues/14>)
+  * Add missing Contributing.md file (#17 <https://github.com/ros2/libyaml_vendor/issues/17>)
+  * Export modern CMake interface target (#16 <https://github.com/ros2/libyaml_vendor/issues/16>)
+  * Contributors: Dirk Thomas, Jorge Perez
+
+ -- Mikael Arguedas <mikael@osrfoundation.org>  Thu, 07 May 2020 00:00:00 -0000
+
+ros-foxy-libyaml-vendor (1.0.1-1focal) focal; urgency=high
+
+  * Add missing export of yaml (#15 <https://github.com/ros2/libyaml_vendor/issues/15>)
+  * Only propagate CMAKE_BUILD_TYPE for single configuration generators (#13 <https://github.com/ros2/libyaml_vendor/issues/13>)
+  * Enable linter tests on libyaml_vendor (#8 <https://github.com/ros2/libyaml_vendor/issues/8>)
+  * Add missing LICENSE file, apache2 (#7 <https://github.com/ros2/libyaml_vendor/issues/7>)
+
+ -- Mikael Arguedas <mikael@osrfoundation.org>  Fri, 24 Apr 2020 00:00:00 -0000
+
+ros-foxy-libyaml-vendor (1.0.0-1focal) focal; urgency=high
+
+  * remove version from CMake, use the one from package.xml instead (#5 <https://github.com/ros2/libyaml_vendor/issues/5>)
+    * remove version from CMake, use the one from package.xml instead
+    * removing version keyword as well
+  * Export libyaml library (#4 <https://github.com/ros2/libyaml_vendor/issues/4>)
+    * Export libyaml library
+    * Remove lib prefix
+  * Added support for Android (#2 <https://github.com/ros2/libyaml_vendor/issues/2>)
+  * create libyaml_vendor (#1 <https://github.com/ros2/libyaml_vendor/issues/1>)
+    * create libyaml
+    * Don't install to include/config.h
+  * Initial commit
+  * Contributors: Mickael Gaillard, Mikael Arguedas, dhood
+
+ -- Mikael Arguedas <mikael@osrfoundation.org>  Mon, 25 Jun 2018 00:00:00 -0000
+
+
