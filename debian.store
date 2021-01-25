@@ -1,1 +1,1 @@
-{"trim": "", "base": "e575341", "trimbase": "", "parent": "debian/foxy/libyaml_vendor", "previous": "7640d84"}
+{"base": "ef653f8", "parent": "debian/foxy/libyaml_vendor", "previous": "ea7ca0b", "trim": "", "trimbase": ""}
