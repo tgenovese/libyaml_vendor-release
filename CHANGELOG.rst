@@ -2,14 +2,22 @@
 Changelog for package libyaml_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.0.3 (2021-01-25)
+1.1.1 (2021-03-10)
 ------------------
-* Foxy QD point to Foxy benchmark tests (`#26 <https://github.com/ros2/libyaml_vendor/issues/26>`_)
-* Update QD (`#25 <https://github.com/ros2/libyaml_vendor/issues/25>`_)
-* Included benchmark tests (`#24 <https://github.com/ros2/libyaml_vendor/issues/24>`_)
+* Fix linker flags for tests when CMake < 3.13 (`#35 <https://github.com/ros2/libyaml_vendor/issues/35>`_)
+* Always preserve source permissions in vendor packages (`#31 <https://github.com/ros2/libyaml_vendor/issues/31>`_)
+* Contributors: Scott K Logan
+
+1.1.0 (2021-01-25)
+------------------
+* Fix target_link_directories/link_directories in cmake (`#29 <https://github.com/ros2/libyaml_vendor/issues/29>`_)
+* Included benchmark tests (`#20 <https://github.com/ros2/libyaml_vendor/issues/20>`_)
+* Update Quality Declaration (`#23 <https://github.com/ros2/libyaml_vendor/issues/23>`_)
+* Update package maintainers. (`#22 <https://github.com/ros2/libyaml_vendor/issues/22>`_)
+* Bump QD to 3 and some minor style fixes (`#19 <https://github.com/ros2/libyaml_vendor/issues/19>`_)
 * Add Security Vulnerability Policy pointing to REP-2006. (`#18 <https://github.com/ros2/libyaml_vendor/issues/18>`_)
 * Add quality declaration libyaml_vendor (`#12 <https://github.com/ros2/libyaml_vendor/issues/12>`_)
-* Contributors: Alejandro Hernández Cordero, Chris Lalancette, Jorge Perez, Louise Poubel
+* Contributors: Alejandro Hernández Cordero, Chris Lalancette, Jorge Perez, Michel Hidalgo
 
 1.0.2 (2020-05-07)
 ------------------
