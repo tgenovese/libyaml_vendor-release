@@ -60,9 +60,9 @@ macro(build_libyaml)
     endif()
   endif()
   include(ExternalProject)
-  externalproject_add(libyaml-0.2.5
-    URL https://github.com/yaml/libyaml/archive/refs/tags/0.2.5.zip
-    URL_MD5 2464078985a73f9d298689d36061143f
+  externalproject_add(libyaml-10c9078
+    URL https://github.com/yaml/libyaml/archive/10c907871f1ccd779c7fccf6b81a62762b5c4e7b.zip
+    URL_MD5 b595f0ab0735c04c7f6ed0a798a3eff7
     TIMEOUT 60
     CMAKE_ARGS
       -DCMAKE_INSTALL_PREFIX=${CMAKE_CURRENT_BINARY_DIR}/libyaml_install
@@ -75,7 +75,6 @@ macro(build_libyaml)
       ${CMAKE_CURRENT_BINARY_DIR}/libyaml_install/
     DESTINATION
       ${CMAKE_INSTALL_PREFIX}
-    USE_SOURCE_PERMISSIONS
     PATTERN config.h EXCLUDE
   )
 
@@ -85,7 +84,7 @@ macro(build_libyaml)
 endmacro()
 
 build_libyaml()
-set(extra_test_dependencies libyaml-0.2.5)
+set(extra_test_dependencies libyaml-10c9078)
 
 ament_export_libraries(yaml)
 ament_export_dependencies(yaml)
@@ -101,16 +100,14 @@ if(BUILD_TESTING)
   get_target_property(ament_cmake_cppcheck_ADDITIONAL_INCLUDE_DIRS
     performance_test_fixture::performance_test_fixture INTERFACE_INCLUDE_DIRECTORIES)
 
-  if(${CMAKE_VERSION} VERSION_LESS "3.13")
-    link_directories(${yaml_LIBRARY_DIRS})
-  endif()
-
   ament_add_gtest(test_yaml_reader test/test_reader.cpp
       WORKING_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}")
   if(TARGET test_yaml_reader)
     target_include_directories(test_yaml_reader PRIVATE ${yaml_INCLUDE_DIRS})
     target_link_libraries(test_yaml_reader ${yaml_LIBRARIES})
-    if(${CMAKE_VERSION} VERSION_GREATER_EQUAL "3.13")
+    if(${CMAKE_VERSION} VERSION_LESS "3.13")
+      link_directories(${yaml_LIBRARY_DIRS})
+    else()
       target_link_directories(test_yaml_reader PRIVATE ${yaml_LIBRARY_DIRS})
     endif()
     ament_target_dependencies(test_yaml_reader rcpputils)
@@ -125,7 +122,9 @@ if(BUILD_TESTING)
   if(TARGET benchmark_reader)
     target_include_directories(benchmark_reader PRIVATE ${yaml_INCLUDE_DIRS})
     target_link_libraries(benchmark_reader ${yaml_LIBRARIES})
-    if(${CMAKE_VERSION} VERSION_GREATER_EQUAL "3.13")
+    if(${CMAKE_VERSION} VERSION_LESS "3.13")
+      link_directories(${yaml_LIBRARY_DIRS})
+    else()
       target_link_directories(benchmark_reader PRIVATE ${yaml_LIBRARY_DIRS})
     endif()
     if(extra_test_dependencies)
