@@ -1,1 +1,1 @@
-{"base": "d3e0c8a", "parent": "debian/rolling/libyaml_vendor", "previous": "7d01763", "trim": "", "trimbase": ""}
+{"base": "fbdb54b", "parent": "debian/galactic/libyaml_vendor", "previous": "e3b888e", "trim": "", "trimbase": ""}
