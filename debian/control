@@ -1,0 +1,12 @@
+Source: ros-rolling-libyaml-vendor
+Section: misc
+Priority: optional
+Maintainer: Scott K Logan <scott@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), libyaml-dev, pkg-config, ros-rolling-ament-cmake, ros-rolling-ament-cmake-gtest <!nocheck>, ros-rolling-ament-cmake-vendor-package, ros-rolling-ament-lint-auto <!nocheck>, ros-rolling-ament-lint-common <!nocheck>, ros-rolling-performance-test-fixture <!nocheck>, ros-rolling-rcpputils <!nocheck>, ros-rolling-rcutils <!nocheck>, ros-rolling-ros-workspace
+Homepage: https://github.com/yaml/libyaml
+Standards-Version: 3.9.2
+
+Package: ros-rolling-libyaml-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libyaml-0-2, libyaml-dev, pkg-config, ros-rolling-ros-workspace
+Description: Vendored version of libyaml.
