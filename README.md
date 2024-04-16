@@ -1,3 +1,26 @@
+## libyaml_vendor (rolling) - 1.6.3-1
+
+The packages in the `libyaml_vendor` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling --track rolling libyaml_vendor` on `Tue, 16 Apr 2024 13:34:13 -0000`
+
+The `libyaml_vendor` package was released.
+
+Version of package(s) in repository `libyaml_vendor`:
+
+- upstream repository: https://github.com/ros2/libyaml_vendor.git
+- release repository: https://github.com/ros2-gbp/libyaml_vendor-release.git
+- rosdistro version: `1.6.2-2`
+- old version: `1.6.2-2`
+- new version: `1.6.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## libyaml_vendor (rolling) - 1.6.2-1
 
 The packages in the `libyaml_vendor` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --track rolling --rosdistro rolling libyaml_vendor` on `Mon, 09 Oct 2023 15:40:52 -0000`
