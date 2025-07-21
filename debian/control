@@ -1,0 +1,12 @@
+Source: ros-jazzy-libyaml-vendor
+Section: misc
+Priority: optional
+Maintainer: Scott K Logan <scott@openrobotics.org>
+Build-Depends: debhelper (>= 9.0.0), libyaml-dev, pkg-config, ros-jazzy-ament-cmake, ros-jazzy-ament-cmake-gtest <!nocheck>, ros-jazzy-ament-cmake-vendor-package, ros-jazzy-ament-lint-auto <!nocheck>, ros-jazzy-ament-lint-common <!nocheck>, ros-jazzy-performance-test-fixture <!nocheck>, ros-jazzy-ros-workspace
+Homepage: https://github.com/yaml/libyaml
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-libyaml-vendor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libyaml-0-2, libyaml-dev, pkg-config, ros-jazzy-ros-workspace
+Description: Vendored version of libyaml.
