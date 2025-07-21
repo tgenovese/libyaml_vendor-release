@@ -1,3 +1,26 @@
+## libyaml_vendor (jazzy) - 1.6.3-3
+
+The packages in the `libyaml_vendor` repository were released into the `jazzy` distro by running `/usr/bin/bloom-release --rosdistro jazzy --override-release-repository-push-url git@github.com:tgenovese/libyaml_vendor-release.git libyaml_vendor` on `Mon, 21 Jul 2025 20:55:10 -0000`
+
+The `libyaml_vendor` package was released.
+
+Version of package(s) in repository `libyaml_vendor`:
+
+- upstream repository: https://github.com/ros2/libyaml_vendor.git
+- release repository: https://github.com/tgenovese/libyaml_vendor-release.git
+- rosdistro version: `1.6.3-2`
+- old version: `1.6.3-2`
+- new version: `1.6.3-3`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## libyaml_vendor (rolling) - 1.8.0-1
 
 The packages in the `libyaml_vendor` repository were released into the `rolling` distro by running `/home/cottsay/infra_ws/install/bloom/bin/bloom-release libyaml_vendor -r rolling` on `Fri, 25 Apr 2025 19:45:45 -0000`
